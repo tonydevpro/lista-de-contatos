@@ -1,0 +1,191 @@
+/* App.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #444;
+}
+
+.geral {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menuAdicionar {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menuAdicionar h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #444;
+}
+
+.fecharMenu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fecharMenu:hover {
+  background-color: #ff1a1a;
+}
+
+.inforAdicionar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inforAdicionar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.inforAdicionar input[type='submit'] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.inforAdicionar input[type='submit']:hover {
+  background-color: #218838;
+}
+
+.contato ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contato li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.contato li:last-child {
+  border-bottom: none;
+}
+
+.avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.infor {
+  flex-grow: 1;
+}
+
+.infor strong {
+  display: block;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.excluir {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.excluir:hover {
+  background-color: #c82333;
+}
+
+.btAdicionar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btAdicionar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btAdicionar button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .geral {
+    padding: 10px;
+  }
+
+  .menuAdicionar {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .avatar img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .infor strong {
+    font-size: 1em;
+  }
+
+  .btAdicionar button {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
